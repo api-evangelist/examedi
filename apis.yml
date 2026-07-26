@@ -1,7 +1,14 @@
 aid: examedi
 name: Examedi
-description: Examedi is a company surfaced as a portfolio company of general-catalyst and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Examedi is a Latin American healthtech company providing at-home medical
+  and laboratory testing. Patients book online and a healthcare professional visits
+  their home to collect samples (blood, urine, PCR and more), with results delivered
+  digitally through the company's app and website. Examedi operates in Chile
+  (examedi.cl) and Mexico (examedi.mx) and runs a live authenticated application
+  backend at api.examedi.com. The company is backed by General Catalyst. No public
+  developer program, API documentation, or OpenAPI definition is published at this
+  time; this profile records the company's identity and discovered surfaces for the
+  API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/examedi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +16,57 @@ x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-regions:
+- CL
+- MX
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://examedi.com/images/apple-touch-icon.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Health
+- Healthcare
+- HealthTech
+- Diagnostics
+- Laboratory
+- Medical Testing
+- At-Home Care
+- Latin America
+apis:
+- name: Examedi Application API
+  description: Live authenticated application backend for Examedi's consumer apps
+    (Django REST Framework). Requires authorization; no public developer
+    documentation or OpenAPI definition is published. Discovered via enrichment
+    probing (health check at the root, permission-gated /v1).
+  humanURL: https://examedi.com
+  baseURL: https://api.examedi.com
+  properties: []
+common:
+- type: DomainSecurity
+  url: security/examedi-domain-security.yml
+- type: LLMsTxt
+  url: llms/examedi-llms.txt
+- type: Website
+  url: https://examedi.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

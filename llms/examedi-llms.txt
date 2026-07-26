@@ -1,0 +1,24 @@
+# Examedi
+
+> Examedi is a Latin American healthtech company providing at-home medical and laboratory testing. Patients book online and a healthcare professional visits their home to collect samples (blood, urine, PCR and more), with results delivered digitally. Examedi operates in Chile and Mexico and is backed by General Catalyst. No public developer program or OpenAPI is published; a live authenticated application backend runs at api.examedi.com.
+
+## Company
+
+- [Examedi (global)](https://examedi.com): At-home medical and laboratory testing, book online.
+- [Examedi Chile](https://examedi.cl): Regional site for Chile.
+- [Examedi Mexico](https://examedi.mx): Regional site for Mexico.
+
+## APIs
+
+- [Examedi Application API](https://api.examedi.com): Live authenticated application backend (Django REST Framework). Authorization required; no public developer documentation or OpenAPI definition published.
+
+## Artifacts
+
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/examedi/refs/heads/main/security/examedi-domain-security.yml): TLS/HSTS/DNS posture for examedi.com and api.examedi.com.
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/examedi/refs/heads/main/apis.yml): API Evangelist network profile for Examedi.
+
+## Notes
+
+- generated: 2026-07-19
+- method: generated
+- source: apis.yml + enrichment probes (no provider-published llms.txt; examedi.com/llms.txt returned 404)
