@@ -44,7 +44,7 @@ accessModel:
 image: https://examedi.com/images/apple-touch-icon.png
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-10-06'
 tags:
 - Company
 - Health
@@ -75,6 +75,8 @@ apis:
   baseURL: https://api.examedi.com
   properties: []
 common:
+- url: https://blog.examedi.com/rss/
+  type: BlogRSS
 - type: DomainSecurity
   url: security/examedi-domain-security.yml
 - type: LLMsTxt
